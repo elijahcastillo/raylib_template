@@ -28,6 +28,9 @@ FetchContent_Declare(
 # Get raylib from url
 FetchContent_MakeAvailable(raylib)
 
+# LSP
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # Adding our source files
 file(GLOB_RECURSE PROJECT_SOURCES CONFIGURE_DEPENDS "${SRC_FILES}")
 set(PROJECT_INCLUDE "${INCLUDE_FILES}") # Define PROJECT_INCLUDE to be the path to the include directory 
